@@ -1,0 +1,81 @@
+*,::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+
+.news-section{
+    margin-left: 120px;
+}
+/* Header styles */
+ul.header {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+
+
+ul.header img.f1 {
+    width: 150px;
+}
+
+/* Link styles */
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin-right: 1400px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+/* Line break styling */
+hr.line-break {
+    border-color: red;
+    border-width: 3px;
+    border-radius: 100px;
+    margin-bottom: 100px;
+}
+
+/* Main container for the news items */
+.news {
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Space between each news item */
+    /* Allows horizontal scrolling if the items exceed container width */
+    padding: 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 600px; /* Increased width for larger images */
+    
+}
+
+.news-item img {
+    width: 100%; /* Image fills the width of .news-item */
+    height: auto;
+    
+}
+
+.news-item p {
+    margin-top: 10px; /* Adds space between image and text */
+    font-size: 25px;
+    color: black; /* Color for better readability */
+}
